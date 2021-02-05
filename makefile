@@ -30,6 +30,12 @@ start:
 	@echo "ALL WORKS DONE... DO: cd $(NAME) TO START WORKING"
 % : ;
 
+upload:
+	git add .
+	git commit -m "num"
+	git push -u online master
+% : ;
+
 zip:
 	zip -r $(NAME).zip $(NAME)
 % : ;
